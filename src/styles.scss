@@ -1,1 +1,126 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.dark{
+    --primary-text: rgba(255, 255, 255, 1);
+    --secondary-text: rgb(163 163 163);
+
+    --primary-bg: rgba(55, 65, 81, 1);
+    --secondary-bg: rgba(17, 24, 39, 1);
+    --third-bg: rgb(75 85 99);
+    
+}
+
+.light{
+    --primary-text: rgba(0,0,0, 1);
+    --secondary-text: rgb(38 38 38);
+
+    --primary-bg: rgb(255, 255, 255);
+    --secondary-bg: rgb(212 212 212);
+    --third-bg: rgb(229 231 235);
+}
+
+.secondary-txt{
+    color: var(--secondary-text);
+}
+
+.primary-background{
+    background-color: var(--primary-bg);
+}
+
+.body{
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+
+    transition: all;
+    transition-duration: 150ms;
+}
+
+.message{
+    background-color: var(--third-bg);
+    color: var(--primary-text);
+
+    transition: all;
+    transition-duration: 150ms;
+}
+
+.user-message{
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+
+    transition: all;
+    transition-duration: 150ms;
+}
+
+.button-primary{
+    color: var(--primary-text);
+    background-color: var(--primary-bg);
+    transition: all;
+    transition-duration: 150ms;
+    &:hover{
+        background-color: var(--secondary-bg);
+    }
+}
+
+.button-secondary{
+    color: var(--primary-text);
+    background-color: var(--secondary-bg);
+    transition: all;
+    transition-duration: 150ms;
+    &:hover{
+        background-color: var(--primary-bg);
+    }
+}
+
+.text-area{
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    color: var(--primary-text);
+    background-color: var(--primary-bg);
+
+    resize: none;
+
+    transition: all;
+    transition-duration: 150ms;
+
+    box-shadow: 0px 0px 2px 2px var(--secondary-bg);
+}
+
+@keyframes slideFromLeft {
+    0%{
+        transform: translateX(-100%);
+    }100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    0%{
+        transform: translateX(100%);
+    }100%{
+        transform: translateX(0);
+    }
+}
+
+.slide-start-left{
+    animation-name: slideFromLeft;
+    animation-duration: 400ms;
+    overflow: hidden;
+
+}
+
+.slide-start-right{
+    animation-name: slideFromRight;
+    animation-duration: 400ms;
+    overflow: hidden;
+}

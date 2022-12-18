@@ -1,0 +1,13 @@
+<div class="w-full overflow-hidden">
+    <div class="flex items-end gap-2 px-2 xl:px-0 max-w-md md:max-w-xl" [ngClass]="message.isSentByUser ? 'float-right flex-row-reverse' : 'float-left'">
+        <img class="my-1 w-8 h-8 object-cover rounded-full z-10" [src]="message.isSentByUser ? 'https://m.media-amazon.com/images/I/61Na6eN05jS._AC_SL1500_.jpg' : 'https://styles.redditmedia.com/t5_2t4vd/styles/communityIcon_kk38d431hrn21.png'"/>
+        <div class="inline-block">
+            <div [ngClass]="message.isSentByUser ? 'user-message slide-start-right' : 'message slide-start-left'" class="px-5 py-1 rounded-xl relative">
+                <p class="break-words">{{message.text}}</p>
+                <div class="secondary-txt flex items-center justify-end ">
+                    <p class="text-xs whitespace-nowrap">{{message.sentAt | date:'shortTime'}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
