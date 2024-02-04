@@ -1,27 +1,36 @@
-# GammaZero
+# Zephir
+Welcome to Zephyr! This repository contains the frontend codebase for the Zephyr project.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
+## Project Overview
 
-## Development server
+Zephyr is designed to emulate a personal assistant using TensorFlow. The goal is to create a customizable personal assistant.
+### Built with
+[![My Skills](https://skillicons.dev/icons?i=typescript,angular&theme=light)](https://skillicons.dev)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Screenshots
+<img src="https://github.com/ikiwq/zephyr-frontend/assets/110495658/c5fa778b-e668-49a9-b50d-b7e50728cda0" width=600>
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To get started with the Zephyr frontend, follow these steps:
+Clone this repository to your local machine:
 
-## Build
+    git clone https://github.com/your-username/zephyr-frontend.git
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Open the project directory:
 
-## Running unit tests
+    cd zephyr-frontend
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Install the necessary dependencies:
 
-## Running end-to-end tests
+    npm install
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Start the development server:
 
-## Further help
+    ng serve
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Finally, open your browser and navigate to http://localhost:4200/ to access the Zephyr frontend.
+
+## License
+
+This project is licensed under the MIT License.
