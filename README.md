@@ -15,7 +15,7 @@ Zephyr is designed to emulate a personal assistant using TensorFlow. The goal is
 To get started with the Zephyr frontend, follow these steps:
 Clone this repository to your local machine:
 
-    git clone https://github.com/your-username/zephyr-frontend.git
+    git clone https://github.com/ikiwq/zephyr-frontend.git
 
 Open the project directory:
 
